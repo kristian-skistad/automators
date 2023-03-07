@@ -14,8 +14,8 @@
       "Target": "furyx639.ExpandedStorage/Storages",
       "Entries": {
         "Automator": {
-          "DisplayName": "Automator",
-          "Description": "Automates linked machines.",
+          "DisplayName": "{{i18n: automator.name}}",
+          "Description": "{{i18n: automator.description}}",
           "Image": "KristianSkistad.Automators.Content/Automator",
           "PlayerColor": false,
           "ModData": {
@@ -30,7 +30,7 @@
       "Action": "EditData",
       "Target": "Data/CraftingRecipes",
       "Entries": {
-        "Automator": "122 1 337 5 787 5/Home/232/true/null/Automator"
+        "Automator": "122 1 337 5 787 5/Home/232/true/null/{{i18n: automator.name}}"
       }
     },
 
