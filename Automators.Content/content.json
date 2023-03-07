@@ -1,0 +1,49 @@
+{
+  "Format": "1.28.0",
+  "Changes": [
+    // Load Texture
+    {
+      "Action": "Load",
+      "Target": "KristianSkistad.Automators.Content/Automator",
+      "FromFile": "assets/automator.png"
+    },
+
+    // Load Storage Data
+    {
+      "Action": "EditData",
+      "Target": "furyx639.ExpandedStorage/Storages",
+      "Entries": {
+        "Automator": {
+          "DisplayName": "Automator",
+          "Description": "Automates linked machines.",
+          "Image": "KristianSkistad.Automators.Content/Automator",
+          "PlayerColor": false,
+          "ModData": {
+            "KristianSkistad.Automator": 1
+          }
+        }
+      }
+    },
+
+    // Add Crafting Recipe
+    {
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "Automator": "122 1 337 5 787 5/Home/232/true/null/Automator"
+      }
+    },
+
+    // Add Unlockable
+    {
+      "Action": "EditData",
+      "Target": "furyx639.ExpandedStorage/Unlock",
+      "Entries": {
+        "Automator": "true"
+      },
+      "When": {
+        "query: {{SkillLevel:Farming}} >= 10": true
+      }
+    }
+  ]
+}

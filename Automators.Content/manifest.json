@@ -1,0 +1,19 @@
+{
+  "Name": "Automators",
+  "Author": "Kristian Skistad",
+  "Version": "1.0.0",
+  "Description": "Removes automation from all chests except a new chest type called an Automator.",
+  "UniqueID": "KristianSkistad.Automators.Content",
+  "MinimumApiVersion": "3.0.0",
+  "UpdateKeys": [],
+  "Dependencies": [
+    {
+      "UniqueID": "furyx639.ExpandedStorage",
+      "IsRequired": true,
+      "MinimumVersion": "2.0.0"
+    }
+  ],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}
