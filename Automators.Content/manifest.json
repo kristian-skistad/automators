@@ -5,7 +5,7 @@
   "Description": "Removes automation from all chests except a new chest type called an Automator.",
   "UniqueID": "KristianSkistad.Automators.Content",
   "MinimumApiVersion": "3.0.0",
-  "UpdateKeys": [],
+  "UpdateKeys": [ "Nexus:1063" ],
   "Dependencies": [
     {
       "UniqueID": "furyx639.ExpandedStorage",

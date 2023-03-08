@@ -6,7 +6,7 @@
   "UniqueID": "KristianSkistad.Automators.Code",
   "EntryDll": "Automators.Code.dll",
   "MinimumApiVersion": "3.0.0",
-  "UpdateKeys": [],
+  "UpdateKeys": [ "Nexus:1063" ],
   "Dependencies": [
     {
       "UniqueID": "Pathoschild.Automate",
