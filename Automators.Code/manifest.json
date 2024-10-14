@@ -1,7 +1,7 @@
 {
   "Name": "Automators",
   "Author": "Kristian Skistad",
-  "Version": "1.0.2",
+  "Version": "1.0.3",
   "Description": "Removes automation from all chests except a new chest type called an Automator.",
   "UniqueID": "KristianSkistad.Automators.Code",
   "EntryDll": "Automators.Code.dll",
@@ -11,7 +11,7 @@
     {
       "UniqueID": "Pathoschild.Automate",
       "IsRequired": true,
-      "MinimumVersion": "1.25.3"
+      "MinimumVersion": "2.2.5"
     }
   ]
 }

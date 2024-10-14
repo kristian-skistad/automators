@@ -4,6 +4,7 @@ using Pathoschild.Stardew.Automate;
 using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Objects;
+using StardewValley.GameData.BigCraftables;
 using System;
 
 namespace KristianSkistad.Automator
@@ -26,7 +27,11 @@ namespace KristianSkistad.Automator
             if (__result is IContainer container)
             {
                 Chest chest = container.Location.getObjectAtTile(__result.TileArea.X, __result.TileArea.Y) as Chest;
-                if (chest != null && !chest.modData.ContainsKey(ModDataId)) __result = null;
+                if (chest != null)
+                {
+                    Game1.bigCraftableData.TryGetValue(chest.itemId.Value, out BigCraftableData bigCraftableData);
+                    if (bigCraftableData != null && !bigCraftableData.CustomFields.ContainsKey(ModDataId)) __result = null;
+                }
             }
         }
     }

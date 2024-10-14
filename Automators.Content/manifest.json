@@ -10,7 +10,7 @@
     {
       "UniqueID": "furyx639.ExpandedStorage",
       "IsRequired": true,
-      "MinimumVersion": "2.0.0"
+      "MinimumVersion": "3.0.5"
     }
   ],
   "ContentPackFor": {

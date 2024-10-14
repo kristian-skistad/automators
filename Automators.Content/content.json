@@ -1,8 +1,9 @@
 {
-  "Format": "1.28.0",
+  "Format": "2.3.0",
   "Changes": [
     // Load Texture
     {
+      "LogName": "Load Automator Texture",
       "Action": "Load",
       "Target": "KristianSkistad.Automators.Content/Automator",
       "FromFile": "assets/automator.png"
@@ -10,15 +11,19 @@
 
     // Load Storage Data
     {
+      "LogName": "Load Automator Object",
       "Action": "EditData",
-      "Target": "furyx639.ExpandedStorage/Storages",
+      "Target": "Data/BigCraftables",
       "Entries": {
         "Automator": {
+          "Name": "Automator",
           "DisplayName": "{{i18n: automator.name}}",
           "Description": "{{i18n: automator.description}}",
-          "Image": "KristianSkistad.Automators.Content/Automator",
-          "PlayerColor": false,
-          "ModData": {
+          "Texture": "KristianSkistad.Automators.Content/Automator",
+          "CustomFields": {
+            "furyx639.ExpandedStorage/Enabled": "true",
+            "furyx639.ExpandedStorage/OpenSound": "Ship",
+            "furyx639.ExpandedStorage/PlayerColor": "false",
             "KristianSkistad.Automator": 1
           }
         }
@@ -30,19 +35,7 @@
       "Action": "EditData",
       "Target": "Data/CraftingRecipes",
       "Entries": {
-        "Automator": "122 1 337 5 787 5/Home/232/true/null/{{i18n: automator.name}}"
-      }
-    },
-
-    // Add Unlockable
-    {
-      "Action": "EditData",
-      "Target": "furyx639.ExpandedStorage/Unlock",
-      "Entries": {
-        "Automator": "true"
-      },
-      "When": {
-        "query: {{SkillLevel:Farming}} >= 10": true
+        "Automator": "72 1 336 3 337 5 787 5/Home/Automator/true/Farming 9/{{i18n: automator.name}}"
       }
     }
   ]
